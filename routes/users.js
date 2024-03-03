@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const plm = require("passport-local-mongoose");
-mongoose.connect("mongodb://localhost:27017/testingdata");
+mongoose.connect("mongodb://127.0.0.1:27017/testingdata").then(function(){
+  console.log("database connected")
+})
 
 
 const userSchema = mongoose.Schema({

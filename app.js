@@ -27,6 +27,7 @@ app.set('view engine', 'ejs');
  passport.serializeUser(usersRouter.serializeUser());
  passport.deserializeUser(usersRouter.deserializeUser());
 
+ 
 
 app.use(logger('dev'));
 app.use(express.json());
